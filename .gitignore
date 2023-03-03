@@ -1,6 +1,6 @@
-#.vscode/
+.vscode/
 build_*/*
-#web/
+web/
 !build_*/kernel.bin
 !build_*/kernel.img
 *.lock
