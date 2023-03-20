@@ -8,6 +8,7 @@
 # (Saves time, and avoids error for some cross compilers)
 set(CMAKE_C_COMPILER_WORKS 1)
 set(CMAKE_CXX_COMPILER_WORKS 1)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # This defines which is the lowest supported CMake version for this project
 cmake_minimum_required(VERSION 3.22.1)
