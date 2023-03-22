@@ -1,4 +1,4 @@
-ENTRY(head_start)
+ENTRY(start)
 
 SECTIONS {
     . = 1M;
@@ -12,5 +12,11 @@ SECTIONS {
     .text :
     {
         *(.text)
+    }
+
+    /* add the .rodata section for string literals */
+    .rodata ALIGN(4) :
+    {
+        *(.rodata*)
     }
 }

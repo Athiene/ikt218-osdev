@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-void terminal_write() {
-    printf("Hello World!");
+void kernel_main(void) {
+  printf("Hello World\n");
 }
 
-int main() {
-    terminal_write();
-    return 0;
+int main () {
+    kernel_main();
 }

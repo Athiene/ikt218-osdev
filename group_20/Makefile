@@ -10,8 +10,12 @@ build/boot.o: boot.asm
 	mkdir -p build
 	nasm -f elf64 boot.asm -o build/boot.o
 
-build/kernel.bin: build/multiboot_header.o build/boot.o linker.ld
-	ld -n -o build/kernel.bin -T linker.ld build/multiboot_header.o build/boot.o
+build/main.o: main.c
+	mkdir -p build
+	gcc -c main.c -o build/main.o -m64 -nostdlib -nostartfiles -nodefaultlibs -static-libgcc
+
+build/kernel.bin: build/multiboot_header.o build/boot.o build/main.o linker.ld
+	ld -n -o build/kernel.bin -T linker.ld build/multiboot_header.o build/boot.o build/main.o -lc
 
 build/os.iso: build/kernel.bin grub.cfg
 	mkdir -p build/isofiles/boot/grub
