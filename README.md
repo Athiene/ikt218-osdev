@@ -11,4 +11,4 @@ cd group_20
 make
 ```
 
-## After doing the following you the Makefile should execute and create thet necessary files so that the OS can be run
+After doing the following the Makefile should execute and create the necessary files and the OS will be run
