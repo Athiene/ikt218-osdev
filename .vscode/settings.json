@@ -1,0 +1,5 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/build_group_20",
+    "cmake.sourceDirectory": "${workspaceFolder}/group_20",
+    "C_Cpp.errorSquiggles": "disabled"
+}

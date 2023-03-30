@@ -11,9 +11,12 @@
       "linux": {
           "command": "echo Starting QEMU&qemu-system-i386 -S -gdb tcp::1234 -boot d -hda ${config:cmake.buildDirectory}/kernel.img -m 64 -hdb ${config:cmake.buildDirectory}/disk.iso"
       },
+<<<<<<< HEAD
       "osx": {
         "command": "echo Starting QEMU&qemu-system-i386 -S -gdb tcp::1234 -boot d -hda ${config:cmake.buildDirectory}/kernel.img -m 64 -hdb ${config:cmake.buildDirectory}/disk.iso"
       },
+=======
+>>>>>>> 2be44fd (Removed web and vscode from gitignore)
       "problemMatcher": {
         "pattern": {
             "regexp": "^(Starting QEMU)",

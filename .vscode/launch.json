@@ -3,11 +3,19 @@
     "configurations": [
         //https://wiki.osdev.org/User:TheCool1Kevin/VSCode_Debug
         {
+<<<<<<< HEAD
             "name": "LINUX Launch with GDB",
             "type": "cppdbg",
             "request": "launch",
             "program": "${config:cmake.buildDirectory}/kernel.bin",
             "cwd": "${config:cmake.buildDirectory}",
+=======
+            "name": "Launch with GDB",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${config:cmake.buildDirectory}/kernel.bin",
+            "cwd": "${workspaceRoot}",
+>>>>>>> 2be44fd (Removed web and vscode from gitignore)
             "args": [],
             /*"sourceFileMap": {
                 "<source-path>": "<target-path>"
@@ -22,7 +30,11 @@
                     "description": "Connect to QEMU remote debugger"
                 },
                 {
+<<<<<<< HEAD
                     "text": "symbol-file ${config:cmake.buildDirectory}/kernel.bin",
+=======
+                    "text": "symbol-file kernel.bin",
+>>>>>>> 2be44fd (Removed web and vscode from gitignore)
                     "description": "GEt kernel symbols"
                 }
             ],
@@ -36,6 +48,7 @@
                     "text": "file ${config:cmake.buildDirectory}/kernel.bin",
                     "description": "Load binary."
                 },
+<<<<<<< HEAD
             ],
             "preLaunchTask": "Launch QEMU"
         },
@@ -74,6 +87,13 @@
                     "description": "Load binary."
                 },
             ],
+=======
+                {
+                    "text": "break isr_handler",
+                    "description": "Break on exception handler."
+                }
+            ],
+>>>>>>> 2be44fd (Removed web and vscode from gitignore)
             "preLaunchTask": "Launch QEMU"
         },
         {
