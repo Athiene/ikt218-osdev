@@ -1,7 +1,6 @@
-#.vscode/
 build_*/*
-#web/
-!build_*/kernel.bin
-!build_*/kernel.img
+.vscode/
+build_*/*
+web/
 *.lock
 *.egg-info*
