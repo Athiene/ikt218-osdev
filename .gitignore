@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 #.vscode/
 build_*/*
 #web/
+=======
+.vscode/
+build_*/*
+web/
+>>>>>>> 626bf6f9179953ad90acac866f80e8a113d3abfc
 !build_*/kernel.bin
 !build_*/kernel.img
 *.lock
