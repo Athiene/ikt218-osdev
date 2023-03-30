@@ -1,6 +1,4 @@
-build_*/*
 .vscode/
-build_*/*
 web/
 *.lock
 *.egg-info*
